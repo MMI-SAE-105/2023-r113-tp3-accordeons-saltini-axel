@@ -25,14 +25,16 @@
       </div>
     </section>
     <section>
-      <button>Bouton 2</button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        voluptatum, quibusdam, quia, quae voluptates voluptatem quod
-        exercitationem quos voluptatibus quidem doloribus. Quisquam
-        voluptatum, quibusdam, quia, quae voluptates voluptatem quod
-        exercitationem quos voluptatibus quidem doloribus.
-      </p>
+      <div x-data="{ open: false }">
+        <button @click="open = ! open">Bouton 2</button>
+
+        <span x-show="open" x-transition>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quibusdam, quia, quae voluptates voluptatem quod
+          exercitationem quos voluptatibus quidem doloribus. Quisquam
+          voluptatum, quibusdam, quia, quae voluptates voluptatem quod
+          exercitationem quos voluptatibus quidem doloribus. </span>
+      </div>
     </section>
     <section>
       <button>Bouton 3</button>
