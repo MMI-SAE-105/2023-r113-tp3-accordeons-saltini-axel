@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accordéon horizontal</title>
+        <style>
+          #accordeon {
+            display: flex;
+            padding: 0;
+            margin: 0;
+          }
+          #accordeon li {
+            width: 107px;
+            transition: width 0.5s;
+            overflow: hidden;
+          }
+        </style>
+
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
@@ -20,6 +33,7 @@
       </li>
       <li>
         <figure>
+          <li class="actif">
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
             <h3>Impedit, a consectetur.</h3>
