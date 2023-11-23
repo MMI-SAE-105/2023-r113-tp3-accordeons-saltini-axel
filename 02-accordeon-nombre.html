@@ -6,23 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
   <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-  <div class="accordeon" x-data="{open: 1}">
+  <div x-data="{ open: 1 }">
     <section>
-      <button>bouton 1</button>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime fuga temporibus odit deleniti ea quaerat laboriosam. Aliquid neque ipsum cum voluptatem repellat? Et velit labore enim quis voluptatibus accusamus.</p>
+      <button @click=" open = 1 ">bouton 1</button>
+      <p x-show=" open === 1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime fuga temporibus odit
+        deleniti ea quaerat laboriosam. Aliquid neque ipsum cum voluptatem repellat? Et velit labore enim quis
+        voluptatibus accusamus.</p>
     </section>
     <section>
-      <button>bouton 2</button>
-      <p>Enim deserunt id sint reiciendis expedita unde minus dolore praesentium repellendus voluptas, laboriosam voluptatum possimus necessitatibus odit sapiente nam, voluptatem ipsum. Aliquam repellat excepturi enim magnam nemo quis facere eius!</p>
+      <button @click=" open = 2 ">bouton 2</button>
+      <p x-show=" open === 2 ">Enim deserunt id sint reiciendis expedita unde minus dolore praesentium repellendus voluptas,
+        laboriosam voluptatum possimus necessitatibus odit sapiente nam, voluptatem ipsum. Aliquam repellat excepturi
+        enim magnam nemo quis facere eius!</p>
     </section>
     <section>
-      <button>bouton 3</button>
-      <p>Aperiam cupiditate, itaque aspernatur est voluptatum eligendi quo iure nemo tempora libero neque inventore placeat sit nostrum architecto, possimus ad sint. Molestias ex provident aperiam consequatur dolores aut. Unde, soluta.</p>
+      <button @click=" open = 3 ">bouton 3</button>
+      <p x-show=" open === 3 ">Aperiam cupiditate, itaque aspernatur est voluptatum eligendi quo iure nemo tempora libero
+        neque inventore placeat sit nostrum architecto, possimus ad sint. Molestias ex provident aperiam consequatur
+        dolores aut. Unde, soluta.</p>
     </section>
+  </div>
   </div>
 </body>
 
