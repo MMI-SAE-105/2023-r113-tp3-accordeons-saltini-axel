@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
-  </head>
-  <body>
-    <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accordéon mémorisant par un nombre l'élèment ouvert</title>
+</head>
+
+<body>
+  <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
+  <div x-data="{ open: 1 }">
+    <button @click="open = 2">Bouton 1</button>
+
+    <span x-show="open ===2" x-transition>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+      voluptat um, quibusdam, quia, quae voluptates voluptatem quod
+      exercitationem quos voluptatibus quidem doloribus. Quisquam
+      voluptatum, quibusdam, quia, quae voluptates voluptatem quod
+      exercitationem quos voluptatibus quidem doloribus. </span>
+  </div>
+</body>
+
 </html>
