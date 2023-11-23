@@ -10,15 +10,19 @@
 
 <body>
   <h1>Accordéon mémorisant par un nombre l'élèment ouvert</h1>
-  <div x-data="{ open: 1 }">
-    <button @click="open = 2">Bouton 1</button>
-
-    <span x-show="open ===2" x-transition>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-      voluptat um, quibusdam, quia, quae voluptates voluptatem quod
-      exercitationem quos voluptatibus quidem doloribus. Quisquam
-      voluptatum, quibusdam, quia, quae voluptates voluptatem quod
-      exercitationem quos voluptatibus quidem doloribus. </span>
+  <div class="accordeon" x-data="{open: 1}">
+    <section>
+      <button>bouton 1</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime fuga temporibus odit deleniti ea quaerat laboriosam. Aliquid neque ipsum cum voluptatem repellat? Et velit labore enim quis voluptatibus accusamus.</p>
+    </section>
+    <section>
+      <button>bouton 2</button>
+      <p>Enim deserunt id sint reiciendis expedita unde minus dolore praesentium repellendus voluptas, laboriosam voluptatum possimus necessitatibus odit sapiente nam, voluptatem ipsum. Aliquam repellat excepturi enim magnam nemo quis facere eius!</p>
+    </section>
+    <section>
+      <button>bouton 3</button>
+      <p>Aperiam cupiditate, itaque aspernatur est voluptatum eligendi quo iure nemo tempora libero neque inventore placeat sit nostrum architecto, possimus ad sint. Molestias ex provident aperiam consequatur dolores aut. Unde, soluta.</p>
+    </section>
   </div>
 </body>
 
