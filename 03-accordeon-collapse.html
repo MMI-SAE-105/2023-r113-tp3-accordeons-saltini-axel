@@ -10,5 +10,28 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
+    <div x-data="{ open: 1 }">
+      <section>
+        <button @click=" open = 1 ">bouton 1</button>
+        <p x-show=" open === 1 " x-collapse.duration.1000ms>Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Debitis maxime fuga temporibus odit
+          deleniti ea quaerat laboriosam. Aliquid neque ipsum cum voluptatem repellat? Et velit labore enim quis
+          voluptatibus accusamus.</p>
+      </section>
+      <section>
+        <button @click=" open = 2 ">bouton 2</button>
+        <p x-show=" open === 2 " x-collapse.duration.1000ms>Enim deserunt id sint reiciendis
+          expedita unde minus dolore praesentium repellendus voluptas,
+          laboriosam voluptatum possimus necessitatibus odit sapiente nam, voluptatem ipsum. Aliquam repellat excepturi
+          enim magnam nemo quis facere eius!</p>
+      </section>
+      <section>
+        <button @click=" open = 3 ">bouton 3</button>
+        <p x-show=" open === 3 " x-collapse.duration.1000ms>Aperiam cupiditate, itaque aspernatur
+          est voluptatum eligendi quo iure nemo tempora libero
+          neque inventore placeat sit nostrum architecto, possimus ad sint. Molestias ex provident aperiam consequatur
+          dolores aut. Unde, soluta.</p>
+      </section>
+    </div>
   </body>
 </html>
