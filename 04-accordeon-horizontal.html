@@ -53,8 +53,8 @@
 
 <body>
   <h1>Accordéon horizontal</h1>
-  <ul id="accordeon" ="actif:isOpen =1,">
-    <li class>
+  <ul id="accordeon" x-data="{isOpen =1}">
+    <li @click="isOpen = 1" :class="{actif: isOpen===1}" >
       <figure>
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
