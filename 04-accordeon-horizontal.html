@@ -15,13 +15,14 @@
 
 #accordeon li {
     display: inline-block;
+    overflow: hidden;
     width: 107px;
-    transition: 100ms ease-in-out;
-    color-background: #eee
-    list-style-type: none; /* pour enlever les puces */
+    transition: all 1s ease-in-out;
+    list-style-type: none; /* pour enlever les puces */ 
     margin: 3px;
     padding: 5px;
     border-radius: 5px;
+    background-color: #eee;
 }
 
 #accordeon li.actif {
@@ -30,15 +31,15 @@
 
 #accordeon li figure {
      margin: 0;
-     display: table;/* pour que les éléments soient alignés horizontalement */
+     display: flex;/* pour que les éléments soient alignés horizontalement */
      width: 317px;/* largeur de l'élément intrérieur de 317px (= déplié) */
 }
 
 #accordeon li figure figcaption {
-     width: 200px;/* largeur du texte de 200px */
-     padding: 10px;/* pour espacer le texte, padding de 10px */
-     vertical-align: top;/* pour que les éléments soient alignés verticalement */
-    
+    width: 200px;/* largeur du texte de 200px */
+    padding: 10px;/* pour espacer le texte, padding de 10px */
+    vertical-align: top;/* pour que les éléments soient alignés verticalement */
+    margin: 0;
      /* espace entre les éléments */
 }
 
@@ -52,8 +53,8 @@
 
 <body>
   <h1>Accordéon horizontal</h1>
-  <ul id="accordeon">
-    <li>
+  <ul id="accordeon" ="actif:isOpen =1,">
+    <li class>
       <figure>
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
