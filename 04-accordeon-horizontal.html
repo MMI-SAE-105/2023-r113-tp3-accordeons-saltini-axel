@@ -7,60 +7,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>Accordéon horizontal</title>
-  <style>
-    #accordeon {
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    #accordeon li {
-      overflow: hidden;
-      width: 107px;
-      transition: all 1s ease-in-out;
-      list-style-type: none;
-      /* pour enlever les puces */
-      margin: 3px;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: #eee;
-    }
-
-    #accordeon li.actif {
-      width: 317px;
-    }
-
-    #accordeon li figure {
-      margin: 0;
-      display: flex;
-      /* pour que les éléments soient alignés horizontalement */
-      width: 317px;
-      /* largeur de l'élément intrérieur de 317px (= déplié) */
-    }
-
-    #accordeon li figure figcaption {
-      width: 200px;
-      /* largeur du texte de 200px */
-      padding: 10px;
-      /* pour espacer le texte, padding de 10px */
-      vertical-align: top;
-      /* pour que les éléments soient alignés verticalement */
-      margin: 0;
-      /* espace entre les éléments */
-    }
-
-    /* Sur tous les enfants de figcation */
-    #accordeon li figure figcaption>* {
-      margin: 0;
-      padding: 0;
-    }
-  </style>
 </head>
+<style>
+  #accordeon {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  #accordeon li {
+    overflow: hidden;
+    width: 107px;
+    transition: all 1s ease-in-out;
+    list-style-type: none;
+    /* pour enlever les puces */
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+
+  #accordeon li.actif {
+    width: 317px;
+  }
+
+  #accordeon li figure {
+    margin: 0;
+    display: flex;
+    /* pour que les éléments soient alignés horizontalement */
+    width: 317px;
+    /* largeur de l'élément intrérieur de 317px (= déplié) */
+  }
+
+  #accordeon li figure figcaption {
+    width: 200px;
+    /* largeur du texte de 200px */
+    padding: 10px;
+    /* pour espacer le texte, padding de 10px */
+    vertical-align: top;
+    /* pour que les éléments soient alignés verticalement */
+    margin: 0;
+    /* espace entre les éléments */
+  }
+
+  /* Sur tous les enfants de figcation */
+  #accordeon li figure figcaption>* {
+    margin: 0;
+    padding: 0;
+  }
+</style>
 
 <body>
   <h1>Accordéon horizontal</h1>
-  <ul id="accordeon" x-data="{isOpen =1}">
-    <li @click="isOpen = 1" :class="{actif: isOpen===1}">
+  <ul id="accordeon" x-data="{IsOpen: 2}">
+    <li @click="IsOpen = 1" :class="{actif: IsOpen === 1}">
       <figure>
         <img src="https://picsum.photos/100?random=1" alt="" width="102">
         <figcaption>
@@ -69,7 +69,7 @@
         </figcaption>
       </figure>
     </li>
-    <li @click="isOpen = 2" :class="{actif: isOpen===2}">
+    <li @click="IsOpen = 2" :class="{actif: IsOpen === 2}">
       <figure>
         <img src="https://picsum.photos/100?random=2" alt="" width="102">
         <figcaption>
@@ -78,7 +78,7 @@
         </figcaption>
       </figure>
     </li>
-    <li @click="isOpen = 3" :class="{actif: isOpen===3}">
+    <li @click="IsOpen = 3" :class="{actif: IsOpen === 3}">
       <figure>
         <img src="https://picsum.photos/100?random=3" alt="" width="102">
         <figcaption>
