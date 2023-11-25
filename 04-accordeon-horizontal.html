@@ -14,14 +14,14 @@
 }
 
 #accordeon li {
-     /* largeur de chaque élément replié 107px */
-     /* pour cacher le contenu dépassant de l'élément */
-     /* pour l'animation, transition sur width */
-     color-background: #eee
-     /* pour enlever les puces */
-     /* pour espacer les éléments, marge de 3px */
-     /* pour espacer le contenu, padding de 5px */
-     /* pour arrondir les bords de 5px */
+    display: inline-block;
+    width: 107px;
+    transition: 100ms ease-in-out;
+    color-background: #eee
+    list-style-type: none; /* pour enlever les puces */
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 #accordeon li.actif {
