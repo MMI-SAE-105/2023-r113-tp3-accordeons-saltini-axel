@@ -9,14 +9,13 @@
   </head>
   <body>
     <h1>Onglets</h1>
+    <div x-data="ouvert: 1">
     <ul role="tablist">
       <li role="tab">Onglet 1</li>
       <li role="tab">Onglet 2</li>
       <li role="tab">Onglet 3</li>
-      <div role="tabpanel">Contenu 1</div>
-      <div role="tabpanel">Contenu 2</div>
-      <div role="tabpanel">Contenu 3</div>
     </ul>
+    </div>
     <div>
       <div role="tabpanel" x-show="ouvert === 1">
         <h1>Panneau 1</h1>
